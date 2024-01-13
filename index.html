@@ -1,141 +1,83 @@
-<!DOCTYPE html>
-<head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-
-</head>
+<!doctype html>
 <html>
-  <style type="text/css">
-    body {
-margin: 0;
-padding: 0;
-      background-color: #281b4b;
-      color: #e9c2b8;
-      font-family: 'Roboto', Arial, Helvetica, sans-serif;
-      font-weight: 300;
-      font-size: 20px;
-    }
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Hłuboce łidský amatérský sbor Na hłas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="nahlas.css" rel="stylesheet" type="text/css">
+</head>
 
-    h1 {
-      font-weight: 500;
-      font-size: 90px;
-    }
-
-a:link {
-color: inherit;
-text-decoration: none;
-}
-
-a:visited {
-color: inherit;
-text-decoration: none;
-}
-
-a:hover {
-color: inherit;
-/*text-decoration: underline;*/
-font-weight: 500;
-}
-
-a:active {
-color: inherit;
-text-decoration: none;
-}
-
-    .content {
-  /*  max-width: 1200px;*/
-  /*    margin: auto; */
-width: 100%;
-      text-align: center;
-    }
-
-    .logo  {
-       min-width: 280px;
-    }
-
-    .top-part {
-/*display: flex;
-justify-content: center;
-align-items: center;*/
-/*margin: 0;*/
-margin-top: 20vh;
-margin-bottom: 33vh;
-}
-
-.bottom-part {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0;
-margin-top: 340px;
-padding: 0;
-background-color: #e9c2b8;
-color: #281b4b;
-font-size: 25px;
-font-weight: 400;
-position: absolute;
-/*position: sticky;*/
-bottom: 0;
-width: 100%;
-height: 33vh;
-}
-
-.box-fb {
-text-align: left;
-width: 20%;
-max-width: 300px;
-min-width: 120px;
-/*left: 33%;*/
-}
-
-.box-yt {
-text-align: right;
-width: 20%;
-max-width: 300px;
-min-width: 120px;
-/*right: 66%;*/
-}
-
-.odkaz {
-text-align: center;
-bottom: 0;
-}
-
-  </style>
 <body>
-<div class="content">
-
-<div class="top-part">
-   <h1>
-   <img src="logo-na-hlas.svg" width=25% class="logo" alt="na hłas">
-</h1>
-   <p>Hłuboce łidský amatérský sbor</p>
+	<header> 
+		<img src="media/logo-na-hlas.svg"  class="logo" alt="na hłas">
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+            </button>
+            <div class="dropdown-content"> 
+				<a href="#o-sboru">O sboru</a> 
+				<a href="#sbormistr">Sbormistr</a> 
+				<a href="#repertoar">Repertoár</a> 
+				<a href="#odkazy">Odkazy</a> 
+				<a href="#kontakt">Kontakt</a> 
+			</div>
+        </div>
+	</header>
+	
+	<div class="content">
+		<section class="cast1 poz-fialove" id="o-sboru">
+			<div class="main-column">
+				<div class="foto">Sem patří obsah pro  class "foto"</div>
+				<div class="info-text">Hłuboce łidský amatérský sbor Na hłas. Včera i dnes hvězdy se smály. Včera i dnes hvězdy se smály. Ve tvůj zrak oblak se snes': veliký, tichý pták. Křídla mu stříbrem plála, daleko, daleko, veslovala do modré dáli, do modré dáli... Padl v tvůj zrak! Já nezaželím, že vidívám: oblačný pták pluje a zpívá tam. Živen mých vteřin smíchem, živen mých smutků tichem, srdcem mým celým. Včera i dnes hvězdy se smály. Včera i dnes hvězdy se smály. Ve tvůj zrak oblak se snes': veliký, tichý pták. </div>
+			</div>			
+		</section>
+		
+		<section class="cast2 poz-bezove" id="sbormistr">
+	  		<div class="main-column">
+	  		  <div class="foto">Sem patří obsah pro  class "foto"</div>
+	  		  <div class="info-text">Jáchym Hájek. Včera i dnes hvězdy se smály. Včera i dnes hvězdy se smály. Ve tvůj zrak oblak se snes': veliký, tichý pták. Křídla mu stříbrem plála, daleko, daleko, veslovala do modré dáli, do modré dáli... Padl v tvůj zrak! Já nezaželím, že vidívám: oblačný pták pluje a zpívá tam. Živen mých vteřin smíchem, živen mých smutků tichem, srdcem mým celým. Včera i dnes hvězdy se smály. Včera i dnes hvězdy se smály. Ve tvůj zrak oblak se snes': veliký, tichý pták. </div>
+	  		</div>
+		</section>
+		
+		<section class="cast3 poz-bezove" id="repertoar">
+	  		<div class="main-column">
+	  		  <div class="info-text">Dvořák, Janáček, Foerster. Včera i dnes hvězdy se smály. Včera i dnes hvězdy se smály. Ve tvůj zrak oblak se snes': veliký, tichý pták. Křídla mu stříbrem plála, daleko, daleko, veslovala do modré dáli, do modré dáli... Padl v tvůj zrak! Já nezaželím, že vidívám: oblačný pták pluje a zpívá tam. Živen mých vteřin smíchem, živen mých smutků tichem, srdcem mým celým. Včera i dnes hvězdy se smály. Včera i dnes hvězdy se smály. Ve tvůj zrak oblak se snes': veliký, tichý pták.</div>
+	  		</div>
+		</section>
+		
+		<section class="cast4 poz-bezove" id="odkazy">
+            <div class="main-column">
+                <div class="box-fb">
+                    <div class="odkaz"> 
+						<a href="https://www.facebook.com/profile.php?id=100041938038427"> 
+							<img src="media/logo-fb.svg" height=40px alt="FB logo"><br>
+                        	Facebook
+						</a> 
+					</div>
+                </div>
+                <div class="box-yt">
+                	<div class="odkaz"> 
+						<a href="https://www.youtube.com/@nahas3590"> 
+							<img src="media/logo-yt.svg" height=40px alt="FB logo"><br>
+							YouTube</a></div>
+				</div>
+			</div>
+        </section>
+		
+		<section class="cast5 poz-fialove" id="kontakt">
+	  		<div class="main-column">
+	  		  <div class="info-text"><p>IČO</p>
+				<p>Adresa</p>
+				<p>Účet</p>
+				<p>Iva Předsedkyně</p></div>
+	  		</div>
+		</section>
+		
 </div>
-
-<div class="bottom-part">
-
-<div class="box-fb">
-<div class="odkaz">
-<a href="https://www.facebook.com/profile.php?id=100041938038427">
-<img src="logo-fb.svg" height=40px alt="FB logo"><br>
-Facebook</a>
-</div>
-</div>
-
-<div class="box-yt">
-<div class="odkaz">
-<a href="https://www.youtube.com/@nahas3590">
-<img src="logo-yt.svg" height=40px alt="FB logo"><br>
-YouTube</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </body>
-
-
 </html>
