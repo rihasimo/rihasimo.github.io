@@ -250,7 +250,9 @@ hr {
 
 .grid-container {
 	width: 100%;
+	max-width: var(--maxw);
 	min-width: var(--minw);
+	margin: auto;
   	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	padding: var(--sidepad);
