@@ -215,6 +215,7 @@ hr {
 
 .content {
    	margin: auto;
+	min-width: var(--minw);
 /*	width: 100%;*/
 	text-align: center;
     }
@@ -266,6 +267,7 @@ hr {
 .odkaz-popis {
 	padding: var(--sidepad);
 	text-align: center;
+	line-height: 1.5;
 }
 
 @media screen and (orientation: portrait) and (max-width: 800px), (max-width: 600px)  {
