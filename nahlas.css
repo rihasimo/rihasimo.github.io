@@ -15,7 +15,7 @@
 /*UNCOMMENT FOR DEBUG*/
 
 /*
-.main-column, .foto, .info-text {
+.main-column, .foto, .info-text, .odkaz {
 	border-style: solid;
 	border-width: 1px;
 	border-color: greenyellow;
@@ -181,7 +181,7 @@ hr {
     text-decoration: none;
     display: block;
 	font-weight: 400;
-	font-size: max(12px,(min(2.5vh,18px)));
+	font-size: max(13px,(min(3vh,18px)));
 }
 .dropdown-content a:hover {
     background-color: #F6E6E2;
@@ -225,6 +225,7 @@ hr {
 
 .box-link {
 	width: 33%;
+	height: 100%;
 	padding: 30px 0;
 }
 
@@ -241,7 +242,8 @@ hr {
 	text-align: center;
 }
 
-@media screen and ((max-width: 600px) or ((orientation: portrait) and (max-width: 800px))) {
+@media screen and (orientation: portrait) and (max-width: 800px), (max-width: 600px)  {
+	
     .responsive {
         width: 100%;
         float: center;
@@ -304,16 +306,16 @@ hr {
 	max-width: 100%;
 /*	max-width: max(80vw, 600px);*/
 	filter: grayscale(80%);
-	transition:	filter 2s, transform 10s ease-in-out;
+	transition:	filter 5s, transform 20s ease-in-out;
+	display: block;
 /* 	overflow: hidden;*/
 /*	padding: 30px 0px;*/
 }
 
 .foto:hover {
 	filter: grayscale(0%);
-/*	transform: scale(1.1);*/
-	transition: filter 0.5s, transform 10s ease-in-out;
-/*	transition: transform 5s ease;*/
+	transform: scale(1.2);
+	transition: filter 2s, transform 20s ease-in-out;
 /*	overflow: hidden;*/
 }
 
