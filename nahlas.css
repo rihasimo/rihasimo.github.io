@@ -1,11 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* roboto-300 - latin */
-/* roboto-300 - latin-ext */
 /* roboto-300 - latin-ext */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -14,7 +12,7 @@
 
 /* roboto-regular - latin-ext */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -23,7 +21,7 @@
 
 /* roboto-500 - latin-ext */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -32,7 +30,7 @@
 
 /* roboto-700 - latin-ext */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -41,7 +39,7 @@
 
 /* roboto-900 - latin-ext */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
@@ -75,7 +73,6 @@
 
 html {
   scroll-behavior: smooth;
-  /*Adds smooth scrolling instead of snapping to element*/
 }
 
 body {
@@ -143,8 +140,9 @@ h2 {
 }
 
 b, strong, h3 {
+	margin: 0;
 	font-weight: 500;
-	font-size: inherit;
+	font-size: inherit;	
 }
 
 ul {
@@ -153,7 +151,7 @@ ul {
 }
 
 p {
-	margin: 0 0 10px 0 ;
+	margin: 5px 0;
 }
 
 hr {
@@ -166,12 +164,8 @@ hr {
 }
 
 .poz-fialove hr {
-/*	width: 40vw;*/
-/*	left: 30vw;*/
-/*	height: 1px;*/
     background-color: #E9C2B8;
 	position: inherit;
-/*	border-style: none;*/
 	display: none;
 }
 
@@ -180,7 +174,7 @@ hr {
 }
 
 .dropbtn {
-	aspect-ratio : 1 / 1;
+	aspect-ratio: 1 / 1;
 	height: 100%;
     background-color: #E9C2B8;
     color: white;
@@ -188,11 +182,10 @@ hr {
 	border-style: solid;
 	border-color: #281B4B;
 	border-width: 2px;
-	
-	
 }
 
 .hamburger {
+	display: block;
     width: 60%;
     height: 3px;
     background-color: #281B4B;
@@ -264,13 +257,20 @@ hr {
 .content {
    	margin: auto;
 	min-width: var(--minw);
-/*	width: 100%;*/
 	text-align: center;
     }
 
+.responsive {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+}
 
-#A2 {
-	grid-area: 1;
+.info-text {
+	font-size: var(--fontsize-normal);
+	padding: var(--sidepad);
+	text-align: left;
+	line-height: 1.75;
 }
 
 #C1 {
@@ -280,10 +280,8 @@ hr {
 	padding-bottom: 0;
 }
 
-.responsive {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	align-items: center;
+#A2 {
+	grid-area: 1;
 }
 
 .cast5 .main-column{
@@ -295,9 +293,9 @@ hr {
 	max-width: var(--maxw);
 	min-width: var(--minw);
 	margin: auto;
+	padding: var(--sidepad);
   	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	padding: var(--sidepad);
 	align-items: start;
 	row-gap: 0;
 }
@@ -313,6 +311,16 @@ hr {
 	text-align: center;
 	line-height: 1.5;
 }
+
+.logo  {
+	height: 50%;
+	max-width: 50%;
+	min-width: 60px;
+	font-weight: 500;
+	font-size: 90px;	
+    }
+
+
 
 @media screen and (orientation: portrait) and (max-width: 800px), (max-width: 600px)  {
 	
@@ -382,20 +390,7 @@ hr {
 }
 
 
-.logo  {
-	height: 50%;
-	max-width: 50%;
-	min-width: 60px;
-	font-weight: 500;
-	font-size: 90px;	
-    }
 
-.info-text {
-	font-size: var(--fontsize-normal);
-	padding: var(--sidepad);
-	text-align: left;
-	line-height: 1.75;
-}
 
 .foto-cont {
 	padding: var(--sidepad);
@@ -423,7 +418,7 @@ hr {
 .foto:hover {
 	filter: grayscale(0%);
 	transform: scale(1.2);
-	transition: filter 2s, transform 20s ease-in-out;
+	transition: filter 5s, transform 20s ease-in-out;
 }
 
 .profilovka {
@@ -448,16 +443,6 @@ a:hover .profilovka {
 a:hover .ikona {
 	transform: scale(1.1);
 	transition: transform 0.1s;
-}
-
-.odkaz {
-/*	padding: 0 var(--sidepad);*/
-/*	min-width: 100px;*/
-}
-
-.odkaz a {
-	font-size: min(26px,max(16px, 1.5vw));
-	word-wrap: break-word; 
 }
 
 /*
