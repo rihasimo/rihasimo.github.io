@@ -24,13 +24,13 @@
 <body>
 	<header> 
 		<img src="media/logo-na-hlas.svg"  class="logo" alt="na hłas">
-        <div class="dropdown" style="float:right;">
-            <button class="dropbtn">
+        <div onmouseover="show()" onmouseout="hide()" class="dropdown" style="float:right;">
+            <button onClick="show()" id="mainMenuBtn" class="dropbtn">
 				<span class="hamburger"></span>
 				<span class="hamburger"></span>
 				<span class="hamburger"></span>
             </button>
-            <div class="dropdown-content"> 
+            <div onClick="hide()" id="mainMenu" class="dropdown-content"> 
 				<a href="#">O sboru</a>
 				<a href="#sbormistr">Sbormistr</a> 
 				<a href="#repertoar">Repertoár</a> 
@@ -164,5 +164,18 @@
 
 		
 </div>
+	
+<script>
+	
+	function hide() {
+		document.getElementById("mainMenu").style.display = "none";
+	}
+	
+	function show() {
+		document.getElementById("mainMenu").style.display = "block";
+	}
+	
+</script>
+	
 </body>
 </html>
