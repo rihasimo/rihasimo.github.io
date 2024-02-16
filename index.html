@@ -25,7 +25,7 @@
 	<header> 
 		<img src="media/logo-na-hlas.svg"  class="logo" alt="na hłas">
         <div onmouseover="show()" onmouseout="hide()" class="dropdown" style="float:right;">
-            <button onClick="show()" id="mainMenuBtn" class="dropbtn">
+            <button onClick="trigger()" id="mainMenuBtn" class="dropbtn">
 				<span class="hamburger"></span>
 				<span class="hamburger"></span>
 				<span class="hamburger"></span>
@@ -166,6 +166,13 @@
 </div>
 	
 <script>
+	
+	function trigger() {
+		if(document.getElementById("mainMenu").style.display == "block")
+			hide();
+		else
+			show();
+	}
 	
 	function hide() {
 		document.getElementById("mainMenu").style.display = "none";
