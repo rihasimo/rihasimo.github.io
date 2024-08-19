@@ -84,6 +84,7 @@ body {
 	font-weight: 300;
 	font-size: var(--fontsize-normal);
 	justify-content: center;
+
 }
 
 header {
@@ -225,6 +226,7 @@ hr {
 	font-weight: 400;
 	font-size: max(13px,(min(3vh,18px)));
 }
+
 .dropdown-content a:hover {
     background-color: #F6E6E2;
 	font-weight: 700;
@@ -232,6 +234,7 @@ hr {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown:hover .dropbtn {
     background-color: white;
 }
@@ -455,6 +458,42 @@ div a[href^="https://"]::after
 	margin-left: -2px;
 }
 */
+
+.poz-fialove .mail-ico::before {
+  	content: "";
+	width: 1em;
+    height: 1em;
+	margin-left: 0.05em;
+	margin-right: 0.2em;
+	margin-bottom: -0.15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Vrstva_2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.86 57.47'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23e9c2b8; %7D %3C/style%3E%3C/defs%3E%3Cg id='text'%3E%3Cpath class='cls-1' d='M72.89,0c1.16,0,2.06.13,2.72.4s1.15.63,1.48,1.1.54,1.02.63,1.64.14,1.28.14,1.97v47.39c0,.66-.13,1.29-.4,1.9s-.62,1.14-1.05,1.59-.96.81-1.57,1.08-1.26.4-1.95.4H4.97c-.81,0-1.53-.06-2.16-.19s-1.15-.36-1.57-.7-.73-.84-.94-1.5-.3-1.52-.3-2.58V5.11c0-.72.06-1.39.19-2.02s.37-1.16.75-1.62.88-.81,1.52-1.08,1.48-.4,2.51-.4h67.92ZM70.92,50.91V13.87l-29.86,22.73c-.62.47-1.28.7-1.97.7-.78,0-1.47-.23-2.06-.7L7.03,13.87v37.03h63.89ZM9.09,6.94l30,22.59,30.14-22.59H9.09Z'/%3E%3C/g%3E%3C/svg%3E");	
+}
+
+.poz-fialove .mail-ico:hover::before {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Vrstva_2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80.69 60.3'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23e9c2b8; %7D %3C/style%3E%3C/defs%3E%3Cg id='text'%3E%3Cpath class='cls-1' d='M6.39,60.3c-.9,0-1.72-.07-2.43-.21-.85-.17-1.59-.5-2.19-.99-.64-.52-1.11-1.25-1.4-2.18-.25-.8-.37-1.78-.37-3V6.53c0-.81.07-1.58.21-2.29.17-.85.52-1.61,1.05-2.24.52-.63,1.22-1.13,2.07-1.48.82-.34,1.82-.51,3.05-.51h67.92c1.35,0,2.42.16,3.25.5.91.37,1.62.91,2.11,1.6.45.65.75,1.4.87,2.24.1.69.16,1.42.16,2.18v47.39c0,.85-.17,1.68-.52,2.46-.33.76-.78,1.44-1.33,2.01-.57.58-1.25,1.05-2.02,1.39-.79.34-1.63.52-2.51.52H6.39ZM70.92,50.91V18.15l-27.58,21c-.88.66-1.83.99-2.83.99-1.1,0-2.09-.34-2.94-1.01L9.87,18.14v32.76h61.06ZM40.51,29.18l25.88-19.4H14.75l25.76,19.4Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.poz-bezove a .mail-ico::before {
+  	content: "";
+	width: 1em;
+    height: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.15em;
+	margin-bottom: -0.15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Vrstva_2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 77.86 57.47'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23281b4b; %7D %3C/style%3E%3C/defs%3E%3Cg id='text'%3E%3Cpath class='cls-1' d='M72.89,0c1.16,0,2.06.13,2.72.4s1.15.63,1.48,1.1.54,1.02.63,1.64.14,1.28.14,1.97v47.39c0,.66-.13,1.29-.4,1.9s-.62,1.14-1.05,1.59-.96.81-1.57,1.08-1.26.4-1.95.4H4.97c-.81,0-1.53-.06-2.16-.19s-1.15-.36-1.57-.7-.73-.84-.94-1.5-.3-1.52-.3-2.58V5.11c0-.72.06-1.39.19-2.02s.37-1.16.75-1.62.88-.81,1.52-1.08,1.48-.4,2.51-.4h67.92ZM70.92,50.91V13.87l-29.86,22.73c-.62.47-1.28.7-1.97.7-.78,0-1.47-.23-2.06-.7L7.03,13.87v37.03h63.89ZM9.09,6.94l30,22.59,30.14-22.59H9.09Z'/%3E%3C/g%3E%3C/svg%3E");	
+}
+
+.poz-bezove a:hover .mail-ico::before {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Vrstva_2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80.69 60.3'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23281b4b; %7D %3C/style%3E%3C/defs%3E%3Cg id='text'%3E%3Cpath class='cls-1' d='M6.39,60.3c-.9,0-1.72-.07-2.43-.21-.85-.17-1.59-.5-2.19-.99-.64-.52-1.11-1.25-1.4-2.18-.25-.8-.37-1.78-.37-3V6.53c0-.81.07-1.58.21-2.29.17-.85.52-1.61,1.05-2.24.52-.63,1.22-1.13,2.07-1.48.82-.34,1.82-.51,3.05-.51h67.92c1.35,0,2.42.16,3.25.5.91.37,1.62.91,2.11,1.6.45.65.75,1.4.87,2.24.1.69.16,1.42.16,2.18v47.39c0,.85-.17,1.68-.52,2.46-.33.76-.78,1.44-1.33,2.01-.57.58-1.25,1.05-2.02,1.39-.79.34-1.63.52-2.51.52H6.39ZM70.92,50.91V18.15l-27.58,21c-.88.66-1.83.99-2.83.99-1.1,0-2.09-.34-2.94-1.01L9.87,18.14v32.76h61.06ZM40.51,29.18l25.88-19.4H14.75l25.76,19.4Z'/%3E%3C/g%3E%3C/svg%3E");
+}
 
 .download::before {
     content: "";
