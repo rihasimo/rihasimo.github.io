@@ -325,7 +325,7 @@ hr {
 
 
 
-@media screen and (orientation: portrait) and (max-width: 800px), (max-width: 600px)  {
+@media screen and (orientation: portrait) and (max-width: 800px), (max-width: 640px)  {
 	
 	.responsive {
 		grid-template-columns: 100%;
