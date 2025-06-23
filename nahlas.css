@@ -57,6 +57,7 @@
 	--colright: calc((100vw - var(--maxw))/2);
 	--sidepad: min(38px,max(15px, 2vw));
 	--fontsize-normal: min(24px,max(16px, 1.4vw));
+	--droptransdur: 0.2s;
 }
 
 /*UNCOMMENT FOR DEBUG*/
@@ -183,6 +184,7 @@ hr {
 	border-style: solid;
 	border-color: #281B4B;
 	border-width: 2px;
+	transition: background-color var(--droptransdur);
 }
 
 .hamburger {
@@ -206,7 +208,8 @@ hr {
 }
 
 .dropdown-content {
-    display: none;
+/*    display: none;*/
+	visibility: hidden;
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
@@ -216,7 +219,10 @@ hr {
 	border-color: #281B4B;
 	border-width: 2px;
     z-index: 1;
-}
+	opacity: 0.0;
+	transition: background-color var(--droptransdur);
+	transition: opacity var(--droptransdur);
+	}
 
 .dropdown-content a {
     color: #281B4B;
@@ -230,13 +236,18 @@ hr {
 .dropdown-content a:hover {
     background-color: #F6E6E2;
 	font-weight: 700;
+	transition: background-color var(--droptransdur);
 }
 .dropdown:hover .dropdown-content {
-    display: block;
+/*    display: block;*/
+	visibility: visible;
+	opacity: 1.0;
+	transition: opacity var(--droptransdur);
 }
 
 .dropdown:hover .dropbtn {
     background-color: white;
+	transition: background-color var(--droptransdur);
 }
 
 
