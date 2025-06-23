@@ -12,6 +12,9 @@
 	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
 	<link rel="shortcut icon" sizes="48x48" href="favicon-48.png">
 	
+<!--	<link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">-->
 	<link rel="preload" href="fonts/roboto-v30-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/roboto-v30-latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/roboto-v30-latin-ext-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -97,6 +100,8 @@
 				<div class="odkaz"> 
 						<a href="https://www.facebook.com/sbornahlas" target="_blank" rel="noopener noreferrer" title="Facebook"> 
 							<img src="media/logo-fb.svg" class="ikona" alt="Facebook">
+<!--							<br>-->
+<!--                        	Facebook-->
 						</a>
 				</div>
 			</div>
@@ -104,6 +109,8 @@
 				<div class="odkaz"> 
 						<a href="https://www.youtube.com/@sbornahlas" target="_blank" rel="noopener noreferrer"  title="YouTube"> 
 							<img src="media/logo-yt.svg" class="ikona" alt="YouTube">
+<!--							<br>-->
+<!--							YouTube-->
 						</a>
 				</div>
 			</div>
@@ -111,6 +118,8 @@
 				<div class="odkaz"> 
 						<a href="mailto:chvalkova.veronika@gmail.com" title="Poslat e-mail"> 
 							<img src="media/verca.jpg" class="profilovka" alt="Profilovka Verča">
+<!--							<br>-->
+<!--							Poslat e-mail ✉-->
 						</a>
 				</div>
 			</div>
@@ -160,14 +169,21 @@
 	
 <script>
 	
+//	function toggle() {
+//		if(document.getElementById("mainMenu").style.display == "block")
+//			hide();
+//		else
+//			show();
+//	}
+	
 	function hide() {
-		document.getElementById("mainMenu").style.display = "none";
+		document.getElementById("mainMenu").style.visibility = "hidden";
 		document.getElementById("mainMenuBtn").style.backgroundColor = "#E9C2B8";
 	}
 	
 	
 	function show() {
-		document.getElementById("mainMenu").style.display = "block";
+		document.getElementById("mainMenu").style.visibility = "visible";
 		document.getElementById("mainMenuBtn").style.backgroundColor = "white";
 	}
 	
