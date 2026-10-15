@@ -118,8 +118,12 @@ a:visited {
 
 a:hover {
 	color: inherit;
-/*	text-decoration: underline;*/
+	text-decoration: underline;
 	font-weight: 900;
+}
+
+a:hover .mail {
+  text-decoration: underline;
 }
 
 a:active {
@@ -135,9 +139,10 @@ h1 {
     }
 
 h2 {
-	margin-bottom: 0;
+	margin-bottom: 1em;
 	font-weight: 500;
 	font-size: 150%;
+	line-height: 1.25;
 /*	text-transform: uppercase;*/
 }
 
@@ -151,6 +156,11 @@ ul {
 	list-style-type: none;
 	padding-left: 0;
 }
+
+#C0 ul {
+	list-style-type: square;
+	margin-left: 30px;
+} 
 
 p {
 	margin: 5px 0;
@@ -285,6 +295,17 @@ hr {
 	padding: var(--sidepad);
 	text-align: left;
 	line-height: 1.75;
+}
+
+#C0 {
+	font-size: var(--fontsize-normal);
+	padding: var(--sidepad);
+	text-align: left;
+	line-height: 1.75;
+}
+
+#C0 h2 {
+	text-align: center;
 }
 
 #C1 {
@@ -428,7 +449,7 @@ hr {
 .foto {
 	max-width: 100%;
 	filter: grayscale(80%);
-	transition:	filter 5s, transform 20s ease-in-out;
+	transition:	filter 2.5s, transform 15s ease-in-out;
 	display: block;
 	margin: auto;
 }
@@ -440,7 +461,7 @@ hr {
 .foto:hover {
 	filter: grayscale(0%);
 	transform: scale(1.2);
-	transition: filter 5s, transform 20s ease-in-out;
+	transition: filter 5s, transform 15s ease-in-out;
 }
 
 .profilovka {
@@ -477,6 +498,26 @@ div a[href^="https://"]::after
 	margin-left: -2px;
 }
 */
+
+.yt-ico::before {
+  	content: "";
+	width: 1.5em;
+	height: 1em;
+	margin-right: 0.5em;
+	margin-left: 0.15em;
+	margin-bottom: -0.15em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-image: url("media/logo-yt-bezove.svg");
+	transition: transform 0.05s;
+}
+
+.yt-ico:hover::before {
+	transform: scale(1.15);
+
+}
 
 .poz-fialove .mail-ico::before {
   	content: "";
